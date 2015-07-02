@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularJS Weather Forecast SPA</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://code.angularjs.org/1.4.0-rc.2/angular.js"></script>
+    <script src="https://code.angularjs.org/1.4.0-rc.2/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.0-rc.2/angular-resource.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">AngularJS Weather</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/forecast"><i class="fa fa-home"></i> Forecast</a></li>
+                </ul>
+            </div><!-- end container-->
+        </nav><!-- end nav-->
+    </header>
+
+    <div class="container">
+        <div ng-view></div>
+    </div>
+</body>
+</html>
